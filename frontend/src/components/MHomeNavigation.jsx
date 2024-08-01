@@ -44,7 +44,6 @@ const MHomeNavigation = ({
       }
       const data = await response.json();
       console.log(data);
-      // ------------****************-------------************-----------******* questions dispalys, now get it to check correct
       // Update state with the data received from the API
       setQuestion({
         question_number: data.question_number,
@@ -52,7 +51,6 @@ const MHomeNavigation = ({
         options: data.options,
         correct_answer: data.correct_answer,
       });
-      // setQuestion(data);
     } catch (err) {
       console.error(err);
     }
@@ -98,10 +96,6 @@ const MHomeNavigation = ({
   };
 
   const questionClick = (choice) => {
-    console.log(`Button clicked with choice: ${choice}`);
-    // Handle question logic here
-    console.log("the question object ", question);
-
     // if they chose same as correct answer
     if (question.correct_answer == choice) {
       document.getElementById(`back${choice}`).style.background = "green";

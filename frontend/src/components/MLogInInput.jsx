@@ -37,7 +37,6 @@ const MLogInInput = ({ className = "" }) => {
 
         const data = await response.json();
         if (response.ok) {
-          console.log("Storing user data in session storage:", data);
           sessionStorage.setItem("profile", JSON.stringify(data)); // Store the entire response
         } else {
           console.error("Error:", data.msg);

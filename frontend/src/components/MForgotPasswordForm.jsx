@@ -9,8 +9,6 @@ const MForgotPasswordForm = ({ className = "" }) => {
     navigate(path);
   };
 
-  // CONTINUE WITH ADDING IT SO THE INPUT CHANGES AND THEN WORK ON SUBMITING IT
-
   const [formData, setFormData] = useState({
     animal: "",
     newPassword: "",

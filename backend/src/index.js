@@ -29,10 +29,7 @@ app.use(express.json());
         console.log(`Server running on http://localhost:${PORT}`);
       });
 
-     } // finally {
-    //   // Ensures that the client will close when you finish/error
-    //   await mongoose.disconnect();
-    // }
+     } 
    catch{
     console.dir
   } 
